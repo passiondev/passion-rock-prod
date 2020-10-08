@@ -206,7 +206,7 @@ namespace RockWeb.Plugins.com_bemaservices.Security.MinistrySafe
                         g.PersonAlias != null &&
                         g.PersonAlias.Person != null )
                     .Where( g =>
-                        g.ForeignId == 2 );
+                        g.ForeignId == 2 || g.ForeignId == 3 );
 
                 // FirstName
                 string firstName = fUser.GetUserPreference( "First Name" );

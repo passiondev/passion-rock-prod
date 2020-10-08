@@ -56,22 +56,22 @@ namespace RockWeb.Plugins.com_blueboxmoon.WatchdogMonitor
         {
             var rockContext = new RockContext();
 
-            var systemEmails = new SystemEmailService( rockContext ).Queryable()
+            var systemCommunications = new SystemCommunicationService( rockContext ).Queryable()
                 .Where( e => e.Category != null )
                 .OrderBy( e => e.Category.Name )
                 .ThenBy( e => e.Title );
 
-            ddlStateChangeEmail.Items.Clear();
-            ddlStateEmail.Items.Clear();
-            ddlStateChangeEmail.Items.Add( new ListItem() );
-            ddlStateEmail.Items.Add( new ListItem() );
-            systemEmails.ToList().ForEach( e =>
+            ddlStateChangeCommunication.Items.Clear();
+            ddlStateCommunication.Items.Clear();
+            ddlStateChangeCommunication.Items.Add( new ListItem() );
+            ddlStateCommunication.Items.Add( new ListItem() );
+            systemCommunications.ToList().ForEach( e =>
             {
-                ddlStateChangeEmail.Items.Add( new ListItem( string.Format( "{0} > {1}", e.Category.Name, e.Title ), e.Guid.ToString().ToLower() ) );
-                ddlStateEmail.Items.Add( new ListItem( string.Format( "{0} > {1}", e.Category.Name, e.Title ), e.Guid.ToString().ToLower() ) );
+                ddlStateChangeCommunication.Items.Add( new ListItem( string.Format( "{0} > {1}", e.Category.Name, e.Title ), e.Guid.ToString().ToLower() ) );
+                ddlStateCommunication.Items.Add( new ListItem( string.Format( "{0} > {1}", e.Category.Name, e.Title ), e.Guid.ToString().ToLower() ) );
             } );
-            ddlStateChangeEmail.SetValue( Rock.Web.SystemSettings.GetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateChangedEmail" ).ToLower() );
-            ddlStateEmail.SetValue( Rock.Web.SystemSettings.GetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateEmail" ).ToLower() );
+            ddlStateChangeCommunication.SetValue( Rock.Web.SystemSettings.GetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateChangedEmail" ).ToLower() );
+            ddlStateCommunication.SetValue( Rock.Web.SystemSettings.GetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateEmail" ).ToLower() );
 
             dvSMSFromNumber.Items.Clear();
             dvSMSFromNumber.DefinedTypeId = DefinedTypeCache.Get( Rock.SystemGuid.DefinedType.COMMUNICATION_SMS_FROM.AsGuid() ).Id;
@@ -84,8 +84,8 @@ namespace RockWeb.Plugins.com_blueboxmoon.WatchdogMonitor
             tbHistoryConnectionString.Text = Rock.Web.SystemSettings.GetValue( "com.blueboxmoon.WatchdogMonitor.HistoryConnectionString" );
 
             lbSave.Visible = IsUserAuthorized( Rock.Security.Authorization.EDIT );
-            ddlStateChangeEmail.Enabled = lbSave.Visible;
-            ddlStateEmail.Enabled = lbSave.Visible;
+            ddlStateChangeCommunication.Enabled = lbSave.Visible;
+            ddlStateCommunication.Enabled = lbSave.Visible;
             dvSMSFromNumber.Enabled = lbSave.Visible;
             ceStateChangeSMS.Enabled = lbSave.Visible;
             ceStateSMS.Enabled = lbSave.Visible;
@@ -113,8 +113,8 @@ namespace RockWeb.Plugins.com_blueboxmoon.WatchdogMonitor
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void lbSave_Click( object sender, EventArgs e )
         {
-            Rock.Web.SystemSettings.SetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateChangedEmail", ddlStateChangeEmail.SelectedValue );
-            Rock.Web.SystemSettings.SetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateEmail", ddlStateEmail.SelectedValue );
+            Rock.Web.SystemSettings.SetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateChangedEmail", ddlStateChangeCommunication.SelectedValue );
+            Rock.Web.SystemSettings.SetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateEmail", ddlStateCommunication.SelectedValue );
 
             Rock.Web.SystemSettings.SetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateChangedSMS", ceStateChangeSMS.Text );
             Rock.Web.SystemSettings.SetValue( "com.blueboxmoon.WatchdogMonitor.ServiceStateSMS", ceStateSMS.Text );

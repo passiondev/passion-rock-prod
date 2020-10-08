@@ -14,11 +14,11 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <Rock:RockDropDownList ID="ddlStateChangeEmail" runat="server" Label="Service State Change Email" Help="The e-mail that is sent immediately when a service check's state changes." />
+                        <Rock:RockDropDownList ID="ddlStateChangeCommunication" runat="server" Label="Service State Change Communication" Help="The communication that is sent immediately when a service check's state changes." />
                     </div>
 
                     <div class="col-md-6">
-                        <Rock:RockDropDownList ID="ddlStateEmail" runat="server" Label="Service State Email" Help="The e-mail that is sent by the notification job to inform of ongoing warnings and errors." />
+                        <Rock:RockDropDownList ID="ddlStateCommunication" runat="server" Label="Service State Communication" Help="The communication that is sent by the notification job to inform of ongoing warnings and errors." />
                     </div>
                 </div>
 

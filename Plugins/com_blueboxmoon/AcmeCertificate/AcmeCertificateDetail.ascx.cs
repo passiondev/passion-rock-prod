@@ -166,7 +166,7 @@ namespace RockWeb.Plugins.com_blueboxmoon.AcmeCertificate
         {
             var rockContext = new RockContext();
             var targetUrl = GetRedirectUrl();
-            var groupTypeId = GroupTypeCache.Read( com.blueboxmoon.AcmeCertificate.SystemGuid.GroupType.ACME_CERTIFICATES ).Id;
+            var groupTypeId = GroupTypeCache.Get( com.blueboxmoon.AcmeCertificate.SystemGuid.GroupType.ACME_CERTIFICATES ).Id;
             var bindings = new List<BindingData>();
 
             var groups = new GroupService( rockContext ).Queryable()
@@ -352,7 +352,7 @@ namespace RockWeb.Plugins.com_blueboxmoon.AcmeCertificate
         $.get(url)
             .done(function(data) {{
                 newCertificate = data;
-                if (newCertificate.PrivateKey)
+                if (newCertificate.PrivateKey && '{6}' === 'false')
                 {{
                     InstallCertificate(true);
                 }}
@@ -643,9 +643,8 @@ namespace RockWeb.Plugins.com_blueboxmoon.AcmeCertificate
 
             //
             // Verify we have at least one binding configured.
-            // TODO: This should probably be removed so offline mode will work correctly.
             //
-            if ( BindingsState.Count == 0 )
+            if ( BindingsState.Count == 0 && !AcmeHelper.LoadAccountData().OfflineMode )
             {
                 nbMessage.NotificationBoxType = Rock.Web.UI.Controls.NotificationBoxType.Warning;
                 nbMessage.Text = "You must add at least one IIS binding.";
@@ -662,7 +661,7 @@ namespace RockWeb.Plugins.com_blueboxmoon.AcmeCertificate
             if ( group == null )
             {
                 group = new Group();
-                group.GroupTypeId = GroupTypeCache.Read( com.blueboxmoon.AcmeCertificate.SystemGuid.GroupType.ACME_CERTIFICATES ).Id;
+                group.GroupTypeId = GroupTypeCache.Get( com.blueboxmoon.AcmeCertificate.SystemGuid.GroupType.ACME_CERTIFICATES ).Id;
 
                 groupService.Add( group );
             }

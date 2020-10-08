@@ -24,15 +24,13 @@
                 </div>
 
                 <div class="row">
-
-                    <div class="col-sm-8">
-                        <Rock:RockTextBox ID="tbEmail" runat="server" Required="false" Label="Email Address" ValidationGroup="CaptivePortal" />
-                    </div>
                     <div class="col-sm-6">
                         <Rock:PhoneNumberBox ID="tbMobilePhone" runat="server" Required="false" Label="Mobile Number" ValidationGroup="CaptivePortal" />
                     </div>
 
-                    
+                    <div class="col-sm-6">
+                        <Rock:RockTextBox ID="tbEmail" runat="server" Required="false" Label="Email Address" ValidationGroup="CaptivePortal" />
+                    </div>
                 </div>
 
                 <div>
@@ -43,7 +41,7 @@
 
                 <div>
                     <div style="display: inline-block;">
-                        <Rock:RockCheckBox ID="cbAcceptTAC" runat="server" ValidationGroup="CaptivePortal" />
+                        <Rock:RockCheckBoxList ID="cblAcceptTAC" runat="server" ValidationGroup="CaptivePortal"></Rock:RockCheckBoxList>
                     </div>
                 </div>
 

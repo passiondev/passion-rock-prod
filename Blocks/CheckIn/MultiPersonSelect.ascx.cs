@@ -83,7 +83,7 @@ namespace RockWeb.Blocks.CheckIn
             }}
         }}
 
-        $('a.js-person-select').click( function() {{
+        $('a.js-person-select').on('click', function() {{
             $(this).toggleClass('active');
             $(this).find('i').toggleClass('fa-check-square').toggleClass('fa-square-o');
             var ids = '';
@@ -110,7 +110,7 @@ namespace RockWeb.Blocks.CheckIn
             }}
         }}
 
-        $('a.js-option-select').click( function() {{
+        $('a.js-option-select').on('click', function() {{
             $(this).removeClass('btn-dimmed');
             $(this).find('i').toggleClass('fa-check-square').toggleClass('fa-square-o');
             var scheduleId = $(this).attr('data-schedule-id');
@@ -223,9 +223,6 @@ namespace RockWeb.Blocks.CheckIn
                 var pnlPhoto = e.Item.FindControl( "pnlPhoto" ) as Panel;
                 pnlPhoto.Visible = !_hidePhotos;
 
-                var pnlPerson = e.Item.FindControl( "pnlPerson" ) as Panel;
-                pnlPerson.CssClass = ( _hidePhotos ? "col-md-10 col-sm-10 col-xs-8" : "col-md-10 col-sm-8 col-xs-6" );
-
                 var lPersonButton = e.Item.FindControl( "lPersonButton" ) as Literal;
                 var person = e.Item.DataItem as CheckInPerson;
 
@@ -276,23 +273,13 @@ namespace RockWeb.Blocks.CheckIn
     </div>
 </div>
 
-", person.Person.FullName + " | " + person.Person.BirthDate.ToShortDateString(), options.AsDelimited( "<br/>" ) );
+", person.Person.FullName, options.AsDelimited( "<br/>" ) );
                     }
                     else
                     {
-                        if(person.Person.GetFamilyRole(new Rock.Data.RockContext()).Id == 3)
-                        {
-                            lPersonButton.Text = string.Format(@"
+                        lPersonButton.Text = string.Format( @"
 <div class='family-personselect'>{0}</div>
-", person.Person.FullName + " | Adult");
-                        }
-                        else
-                        {
-                            lPersonButton.Text = string.Format(@"
-<div class='family-personselect'>{0}</div>
-", person.Person.FullName + " | " + person.Person.BirthDate.ToShortDateString() + " (Age: " + person.Person.Age + ")");
-                        }
-                        
+", person.Person.FullName );
                     }
                 }
             }
@@ -523,24 +510,13 @@ namespace RockWeb.Blocks.CheckIn
     <div class='col-md-5 family-personselect'>{0}</div>
     <div class='col-md-7 auto-select family-auto-select'><div class='auto-select-caption'>Current Selection</div><div class='auto-select-details'>{1}</div></div>
 </div>
-", person.Person.FullName + " | " + person.Person.BirthDate.ToShortDateString(), options.AsDelimited( "<br/>" ) );
+", person.Person.FullName, options.AsDelimited( "<br/>" ) );
                 }
                 else
                 {
-                    
-                    if (person.Person.GetFamilyRole(new Rock.Data.RockContext()).Id == 3)
-                    {
-                        return string.Format(@"
+                    return string.Format( @"
 <div class='family-personselect'>{0}</div>
-", person.Person.FullName + " | Adult");
-                    }
-                    else
-                    {
-                        return string.Format(@"
-<div class='family-personselect'>{0}</div>
-", person.Person.FullName + " | " + person.Person.BirthDate.ToShortDateString());
-                    }
-                    
+", person.Person.FullName );
                 }
             }
 
@@ -560,7 +536,7 @@ namespace RockWeb.Blocks.CheckIn
             if ( person != null )
             {
                 hfPersonId.Value = person.Person.Id.ToString();
-                lOptionTitle.Text = string.Format( GetAttributeValue( "OptionTitle" ), person.Person.FullName + " " + person.Person.Age );
+                lOptionTitle.Text = string.Format( GetAttributeValue( "OptionTitle" ), person.Person.FullName );
                 lOptionSubTitle.Text = string.Format( GetAttributeValue( "OptionSubTitle" ), person.Person.NickName );
 
                 BindOptions();

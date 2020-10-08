@@ -5,9 +5,10 @@
         <div class="panel panel-block">
             <div class="panel-heading rollover-container">
                 <h4 class="panel-title"><asp:Literal ID="lHeadingIcon" runat="server" />&nbsp;<asp:Literal ID="lHeading" runat="server" /></h4>
-                <div class="pull-right rollover-item">
-                    <asp:LinkButton ID="lbEdit" runat="server" CssClass="btn btn-xs btn-square btn-default" OnClick="lbEditFilters_Click"><i class="fa fa-gear"></i></asp:LinkButton>
-                </div>
+                
+                    <div class="pull-right rollover-item">
+                        <asp:LinkButton ID="lbEdit" runat="server" CssClass="btn btn-xs btn-square btn-default" OnClick="lbEditFilters_Click"><i class="fa fa-gear"></i></asp:LinkButton>
+                    </div>
             </div>
             <div class="panel-body">
 
@@ -18,9 +19,17 @@
                         </div>
                     </div>
 
-                    <div class="pull-right">
-                        <Rock:BootstrapButton ID="btnResetFilters" runat="server" Text="Reset Filters" CssClass="btn btn-default" OnClick="btnResetFilters_Click" />
-                        <Rock:BootstrapButton ID="btnFilter" runat="server" Text="Filter" CssClass="btn btn-primary" OnClick="btnFilter_Click" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                                    <div class="form-group">
+                                        <Rock:BootstrapButton ID="btnResetFilters" runat="server" Text="Reset Filters" CssClass="btn btn-sm btn-default" OnClick="btnResetFilters_Click" />
+                                    </div>
+                                    <div class="form-group">
+                                        <Rock:BootstrapButton ID="btnFilter" runat="server" Text="Filter" CssClass="btn btn-sm btn-primary" OnClick="btnFilter_Click" />
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </asp:Panel>
 

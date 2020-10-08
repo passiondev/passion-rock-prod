@@ -152,7 +152,7 @@ namespace RockWeb.Blocks.Mobile
         {
             var breadCrumbs = new List<BreadCrumb>();
 
-            int? siteId = PageParameter( pageReference, "siteId" ).AsIntegerOrNull();
+            int? siteId = PageParameter( pageReference, "SiteId" ).AsIntegerOrNull();
             if ( siteId != null )
             {
                 var site = new SiteService( new RockContext() ).Get( siteId.Value );
@@ -496,14 +496,16 @@ namespace RockWeb.Blocks.Mobile
                 cpPrimary.Value = additionalSettings.DownhillSettings.ApplicationColors.Primary;
                 cpSecondary.Value = additionalSettings.DownhillSettings.ApplicationColors.Secondary;
                 cpSuccess.Value = additionalSettings.DownhillSettings.ApplicationColors.Success;
+                cpInfo.Value = additionalSettings.DownhillSettings.ApplicationColors.Info;
                 cpDanger.Value = additionalSettings.DownhillSettings.ApplicationColors.Danger;
                 cpWarning.Value = additionalSettings.DownhillSettings.ApplicationColors.Warning;
                 cpLight.Value = additionalSettings.DownhillSettings.ApplicationColors.Light;
                 cpDark.Value = additionalSettings.DownhillSettings.ApplicationColors.Dark;
+                cpBrand.Value = additionalSettings.DownhillSettings.ApplicationColors.Brand;
+                cpInfo.Value = additionalSettings.DownhillSettings.ApplicationColors.Info;
 
                 nbRadiusBase.Text = decimal.ToInt32( additionalSettings.DownhillSettings.RadiusBase ).ToStringSafe();
 
-                nbSpacingBase.Text = decimal.ToInt32( additionalSettings.DownhillSettings.SpacingBase ).ToStringSafe();
                 nbFontSizeDefault.Text = decimal.ToInt32( additionalSettings.DownhillSettings.FontSizeDefault ).ToStringSafe();
 
                 imgEditHeaderImage.BinaryFileId = site.FavIconBinaryFileId;
@@ -912,14 +914,16 @@ namespace RockWeb.Blocks.Mobile
                 additionalSettings.DownhillSettings.ApplicationColors.Primary = ParseColor( cpPrimary.Value );
                 additionalSettings.DownhillSettings.ApplicationColors.Secondary = ParseColor( cpSecondary.Value );
                 additionalSettings.DownhillSettings.ApplicationColors.Success = ParseColor( cpSuccess.Value );
+                additionalSettings.DownhillSettings.ApplicationColors.Info = ParseColor( cpInfo.Value );
                 additionalSettings.DownhillSettings.ApplicationColors.Danger = ParseColor( cpDanger.Value );
                 additionalSettings.DownhillSettings.ApplicationColors.Warning = ParseColor( cpWarning.Value );
                 additionalSettings.DownhillSettings.ApplicationColors.Light = ParseColor( cpLight.Value );
                 additionalSettings.DownhillSettings.ApplicationColors.Dark = ParseColor( cpDark.Value );
+                additionalSettings.DownhillSettings.ApplicationColors.Brand = ParseColor( cpBrand.Value );
+                additionalSettings.DownhillSettings.ApplicationColors.Info = ParseColor( cpInfo.Value );
 
                 additionalSettings.DownhillSettings.RadiusBase = nbRadiusBase.Text.AsDecimal();
 
-                additionalSettings.DownhillSettings.SpacingBase = nbSpacingBase.Text.AsDecimal();
                 additionalSettings.DownhillSettings.FontSizeDefault = nbFontSizeDefault.Text.AsDecimal();
                 additionalSettings.DownhillSettings.Platform = Rock.DownhillCss.DownhillPlatform.Mobile;
 
@@ -1188,9 +1192,19 @@ namespace RockWeb.Blocks.Mobile
             var pageService = new PageService( rockContext );
             var page = pageService.Get( e.RowKeyId );
 
-            pageService.Delete( page );
+            if ( page != null )
+            {
+                string errorMessage;
+                if ( !pageService.CanDelete( page, out errorMessage ) )
+                {
+                    mdWarning.Show( errorMessage, ModalAlertType.Warning );
+                    return;
+                }
 
-            rockContext.SaveChanges();
+                pageService.Delete( page );
+
+                rockContext.SaveChanges();
+            }
 
             BindPages( hfSiteId.ValueAsInt() );
         }

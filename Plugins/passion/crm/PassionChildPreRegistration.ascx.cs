@@ -30,7 +30,7 @@ using Rock.Security;
 using Rock.Web.Cache;
 using Rock.Web.UI;
 using Rock.Web.UI.Controls;
-using com.passioncitychurch.familyregistration;
+using com.passioncitychurch;
 
 namespace RockWeb.Plugins.passion.crm
 {

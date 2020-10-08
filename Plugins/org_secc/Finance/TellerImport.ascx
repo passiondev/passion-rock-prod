@@ -65,6 +65,9 @@
                             <Rock:RockDropDownList ID="ddlBatch" runat="server" Label="Batch" Required="false" DataValueField="Id" DataTextField="Name"
                                 Help="The batch to add transactions to. Leave blank to create a new batch." />
                         </div>
+                         <div class="col-md-6">
+                            <Rock:DataTextBox ID="tbBatchName" runat="server" SourceTypeName="Rock.Model.FinancialBatch" PropertyName="Name" Label="Batch Name" MaxLength="50"/>
+                        </div>
                     </div>
 
                     <div class="actions">

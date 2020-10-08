@@ -164,6 +164,7 @@ namespace RockWeb.Blocks.Connection
             campaignConnection.Name = tbName.Text;
             campaignConnection.IsActive = cbIsActive.Checked;
             campaignConnection.ConnectionTypeGuid = ddlConnectionType.SelectedValue.AsGuid();
+            campaignConnection.RequestCommentsLavaTemplate = ceCommentLavaTemplate.Text;
             campaignConnection.OpportunityGuid = ddlConnectionOpportunity.SelectedValue.AsGuid();
             var dataViewGuid =  new DataViewService( new RockContext() ).GetGuid( dvRequestor.SelectedValue.AsInteger() );
             if ( dataViewGuid.HasValue )
@@ -272,6 +273,7 @@ namespace RockWeb.Blocks.Connection
             {
                 lTitle.Text = connectionCampaignItem.Name.FormatAsHtmlTitle();
                 cbIsActive.Checked = connectionCampaignItem.IsActive;
+                ceCommentLavaTemplate.Text = connectionCampaignItem.RequestCommentsLavaTemplate;
                 rblFamilyLimits.SetValue( ( int ) connectionCampaignItem.FamilyLimits );
                 rblCreateConnectionRequests.SetValue( ( int ) connectionCampaignItem.CreateConnectionRequestOption );
                 ShowHideDailyLimit( connectionCampaignItem.CreateConnectionRequestOption );

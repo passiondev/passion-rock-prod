@@ -27,6 +27,13 @@
                 <Rock:RockDropDownList ID="ddlConnectionType" runat="server" Label="Connection Type" Required="true" Help="The Connection Type and Opportunity for the campaign." AutoPostBack="true" OnSelectedIndexChanged="ddlConnectionType_SelectedIndexChanged" CssClass="input-width-xxl" />
                 <Rock:RockDropDownList ID="ddlConnectionOpportunity" runat="server" Label="Connection Opportunity" Required="true" CssClass="input-width-xxl" />
 
+                <asp:HiddenField ID="hfCampaignShowAdvancedSettings" runat="server" Value="false" />
+                <a href="#" class="btn btn-xs btn-link js-campaign-show-advanced-settings" >Show Advanced Settings</a>
+
+                <div class="js-campaign-advanced-settings">
+                    <Rock:CodeEditor ID="ceCommentLavaTemplate" runat="server" EditorHeight="200" EditorMode="Lava" EditorTheme="Rock" Label="Request Comments Lava Template" Help="The template will be used to generate the comments for the connection request. It will be passed [Person] and [Family] merge fields for use in the template <span class='tip tip-lava'></span>." />
+                </div>
+
                 <h4 class="margin-t-xl">Who Should Be Connected</h4>
                 <span class="text-muted">Determines who will be considered for creating connection requests.</span>
                 <hr class="margin-t-sm" >
@@ -73,5 +80,23 @@
                 </div>
             </div>
         </asp:Panel>
+        <script>
+
+            Sys.Application.add_load(function () {
+
+                $('.js-campaign-show-advanced-settings').off('click').on('click', function () {
+                    var isVisible = !$('.js-campaign-advanced-settings').is(':visible');
+                    $('#<%=hfCampaignShowAdvancedSettings.ClientID %>').val(isVisible);
+                    $('.js-campaign-show-advanced-settings').text(isVisible ? 'Hide Advanced Settings' : 'Show Advanced Settings');
+                    $('.js-campaign-advanced-settings').slideToggle();
+                    return false;
+                });
+
+                if ($('#<%=hfCampaignShowAdvancedSettings.ClientID %>').val() == "false") {
+                    $('.js-campaign-advanced-settings').hide();
+                    $('.js-campaign-show-advanced-settings').text('Show Advanced Settings');
+                }
+            });
+        </script>
     </ContentTemplate>
 </asp:UpdatePanel>

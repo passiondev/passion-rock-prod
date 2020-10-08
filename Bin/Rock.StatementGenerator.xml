@@ -635,12 +635,17 @@
         </member>
         <member name="F:Rock.StatementGenerator.OrderBy.PostalCode">
             <summary>
-            The postal code
+            Sort by postal code
             </summary>
         </member>
         <member name="F:Rock.StatementGenerator.OrderBy.LastName">
             <summary>
-            The last name
+            Sort by Last Name
+            </summary>
+        </member>
+        <member name="F:Rock.StatementGenerator.OrderBy.PageCount">
+            <summary>
+            Sort by Page Count
             </summary>
         </member>
         <member name="T:Rock.StatementGenerator.SystemGuid.Attribute">

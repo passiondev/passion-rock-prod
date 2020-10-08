@@ -158,7 +158,7 @@ namespace RockWeb.Blocks.CheckIn
                         GoBack();
                     }
 
-                    lTitle.Text = string.Format( GetAttributeValue( "Title" ), GetPersonScheduleSubTitle() );
+                    lTitle.Text = string.Format(GetAttributeValue("Title"), person.Person.FullName + " | " + person.Person.BirthDate.ToShortDateString() + " (Age: " + person.Person.Age + ")");
 
                     string groupTypeNames = groupTypes
                         .Where( t => t.GroupType != null )

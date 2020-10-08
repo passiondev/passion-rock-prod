@@ -362,6 +362,38 @@
             <returns></returns>
             <exception cref="T:System.Web.Http.HttpResponseException"></exception>
         </member>
+        <member name="M:Rock.Rest.Controllers.CheckinController.PrintSessionLabels(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Prints the session labels for the specified sessions.
+            </summary>
+            <param name="session">The session(s) to be printed.</param>
+            <param name="kioskId">The kiosk identifier requesting the labels.</param>
+            <returns>
+            A collection of <see cref="T:Rock.CheckIn.CheckInLabel">labels</see> that should be printed by the client.
+            </returns>
+        </member>
+        <member name="T:Rock.Rest.Controllers.CheckinController.PrintSessionLabelsResponse">
+            <summary>
+            The response data used with the <see cref="M:Rock.Rest.Controllers.CheckinController.PrintSessionLabels(System.String,System.Nullable{System.Int32})" />
+            API endpoint.
+            </summary>
+        </member>
+        <member name="P:Rock.Rest.Controllers.CheckinController.PrintSessionLabelsResponse.Labels">
+            <summary>
+            Gets or sets the labels to be printed by the client.
+            </summary>
+            <value>
+            The labels to be printed by the client.
+            </value>
+        </member>
+        <member name="P:Rock.Rest.Controllers.CheckinController.PrintSessionLabelsResponse.Messages">
+            <summary>
+            Gets or sets the errors encountered by the server.
+            </summary>
+            <value>
+            The errors encountered by the server.
+            </value>
+        </member>
         <member name="T:Rock.Rest.Controllers.AnalyticsDimCampusController">
             <summary>
             AnalyticsDimCampus REST API
@@ -400,6 +432,16 @@
         <member name="M:Rock.Rest.Controllers.AssessmentTypesController.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.AssessmentTypesController"/> class.
+            </summary>
+        </member>
+        <member name="T:Rock.Rest.Controllers.AttendanceCheckInSessionsController">
+            <summary>
+            AttendanceCheckInSessions REST API
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Controllers.AttendanceCheckInSessionsController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.AttendanceCheckInSessionsController"/> class.
             </summary>
         </member>
         <member name="T:Rock.Rest.Controllers.AttributeValueHistoricalsController">
@@ -494,11 +536,40 @@
             <summary>
             Documents REST API
             </summary>
+            <summary>
+            Documents REST API
+            </summary>
         </member>
         <member name="M:Rock.Rest.Controllers.DocumentsController.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.DocumentsController"/> class.
             </summary>
+        </member>
+        <member name="M:Rock.Rest.Controllers.DocumentsController.UploadDocument(System.Int32,System.Int32,System.String)">
+            <summary>
+            Uploads a file, storing it as a binary file and linking it to the specified entity with a new document record.
+            </summary>
+            <param name="documentTypeId">The document type identifier.</param>
+            <param name="entityId">The entity identifier.</param>
+            <param name="documentName">The name to be used for the document (will use the uploaded file name if not specified).</param>
+            <returns>The ID of the newly-saved document record.</returns>
+        </member>
+        <member name="M:Rock.Rest.Controllers.DocumentsController.UploadDocumentForForeignPersonId(System.Int32,System.Int32,System.String)">
+            <summary>
+            Uploads a file, storing it as a binary file and linking it to the specified person - by way of the foreign ID - with a new document record.
+            </summary>
+            <param name="documentTypeId">The document type identifier.</param>
+            <param name="foreignPersonId">The foreign person identifier.</param>
+            <param name="documentName">The name to be used for the document (will use the uploaded file name if not specified).</param>
+            <returns>The ID of the newly-saved document record.</returns>
+        </member>
+        <member name="M:Rock.Rest.Controllers.DocumentsController.GenerateResponse(System.Net.HttpStatusCode,System.String)">
+            <summary>
+            Generates the response.
+            </summary>
+            <param name="code">The code.</param>
+            <param name="message">The message.</param>
+            <exception cref="T:System.Web.Http.HttpResponseException"></exception>
         </member>
         <member name="T:Rock.Rest.Controllers.DocumentTypesController">
             <summary>
@@ -733,6 +804,26 @@
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.RegistrationTemplateFeeItemsController"/> class.
             </summary>
         </member>
+        <member name="T:Rock.Rest.Controllers.SmsActionsController">
+            <summary>
+            SmsActions REST API
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Controllers.SmsActionsController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.SmsActionsController"/> class.
+            </summary>
+        </member>
+        <member name="T:Rock.Rest.Controllers.SmsPipelinesController">
+            <summary>
+            SmsPipelines REST API
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Controllers.SmsPipelinesController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.SmsPipelinesController"/> class.
+            </summary>
+        </member>
         <member name="T:Rock.Rest.Controllers.RegistrationTemplatePlacementsController">
             <summary>
             RegistrationTemplatePlacements REST API
@@ -774,16 +865,6 @@
         <member name="M:Rock.Rest.Controllers.RelatedEntitiesController.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.RelatedEntitiesController"/> class.
-            </summary>
-        </member>
-        <member name="T:Rock.Rest.Controllers.SmsActionsController">
-            <summary>
-            SmsActions REST API
-            </summary>
-        </member>
-        <member name="M:Rock.Rest.Controllers.SmsActionsController.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.SmsActionsController"/> class.
             </summary>
         </member>
         <member name="T:Rock.Rest.Controllers.StepProgramsController">
@@ -1220,6 +1301,30 @@
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.FinancialGatewaysController"/> class.
             </summary>
         </member>
+        <member name="T:Rock.Rest.Controllers.InteractionsController">
+            <summary>
+            Additional methods on the Interactions REST API
+            </summary>
+            <summary>
+            Interactions REST API
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Controllers.InteractionsController.InteractionImport(Rock.BulkImport.InteractionsImport)">
+            <summary>
+            Import Interaction Records using BulkInsert
+            </summary>
+            <param name="interactionsImport">The interactions import.</param>
+            <exception cref="T:System.Web.Http.HttpResponseException"></exception>
+            <remarks>
+            For InteractionChannel* and InteractionComponent*: Id, Guid, or ForeignKey (and Name) must be specified. 
+            For best performance, limit to 1000 records at a time.
+            </remarks>
+        </member>
+        <member name="M:Rock.Rest.Controllers.InteractionsController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.InteractionsController"/> class.
+            </summary>
+        </member>
         <member name="T:Rock.Rest.Controllers.RegistrationRegistrantsController">
             <summary>
             
@@ -1586,10 +1691,18 @@
         </member>
         <member name="M:Rock.Rest.Controllers.AttendancesController.RegisterRSVPRecipients(System.Int32,System.String)">
             <summary>
-            Creates attendance records if they don't exist for a designated occurrence and list of person IDs.
+            This method is deprecated and should not be used as it is subject to the limits of the maximum URL length of the browser.
+            Use the method which accepts the list of Person Ids in the body of the request, instead.
             </summary>
             <param name="occurrenceId">The ID of the AttendanceOccurrence record.</param>
             <param name="personIds">A comma-delimited list of Person IDs.</param>
+        </member>
+        <member name="M:Rock.Rest.Controllers.AttendancesController.RegisterRSVPRecipients(System.Int32,System.Collections.Generic.List{System.String})">
+            <summary>
+            Creates attendance records if they don't exist for a designated occurrence and list of person IDs.
+            </summary>
+            <param name="occurrenceId">The ID of the AttendanceOccurrence record.</param>
+            <param name="personIds">A list of Person IDs.</param>
         </member>
         <member name="M:Rock.Rest.Controllers.AttendancesController.AttendanceImport(Rock.BulkImport.AttendancesImport)">
             <summary>
@@ -1942,16 +2055,6 @@
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.InteractionDeviceTypesController"/> class.
             </summary>
         </member>
-        <member name="T:Rock.Rest.Controllers.InteractionsController">
-            <summary>
-            Interactions REST API
-            </summary>
-        </member>
-        <member name="M:Rock.Rest.Controllers.InteractionsController.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.InteractionsController"/> class.
-            </summary>
-        </member>
         <member name="T:Rock.Rest.Controllers.InteractionSessionsController">
             <summary>
             InteractionSessions REST API
@@ -2044,7 +2147,7 @@
             <param name="actionName">Name of the action.</param>
             <returns></returns>
         </member>
-        <member name="M:Rock.Rest.Controllers.BlocksController.BlockAction(System.String,System.String,System.String,Newtonsoft.Json.Linq.JToken)">
+        <member name="M:Rock.Rest.Controllers.BlocksController.BlockAction(System.String,System.String,System.String,System.String)">
             <summary>
             Executes an action handler on a specific block.
             </summary>
@@ -2101,6 +2204,15 @@
             <param name="includedCategoryIds">The included category ids.</param>
             <returns></returns>
         </member>
+        <member name="M:Rock.Rest.Controllers.CategoriesController.GetAllMetricDescendants(Rock.Rest.Controllers.CategoryItem,System.String,Rock.Model.MetricCategoryService)">
+            <summary>
+            Gets all category and non-category item decendents for the provided <see cref="T:Rock.Rest.Controllers.CategoryItem"/>, which should represent a <see cref="T:Rock.Model.Metric"/> or <see cref="T:Rock.Model.MetricCategory"/>.
+            </summary>
+            <param name="categoryItem">The <see cref="T:Rock.Rest.Controllers.CategoryItem"/>, which should represent a <see cref="T:Rock.Model.Metric"/> or <see cref="T:Rock.Model.MetricCategory"/>.</param>
+            <param name="includedCategoryIds">The included category ids.</param>
+            <param name="metricCategoryService">The <see cref="T:Rock.Model.MetricCategoryService"/>.</param>
+            <returns></returns>
+        </member>
         <member name="M:Rock.Rest.Controllers.CategoriesController.GetChildren(System.Int32,System.Int32,System.Boolean,System.Int32,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.Boolean)">
             <summary>
             Gets the children.
@@ -2122,7 +2234,7 @@
             <param name="lazyLoad">If true then get the data for each tree node as it is selected, otherwise get the entire tree.</param>
             <returns></returns>
         </member>
-        <member name="M:Rock.Rest.Controllers.CategoriesController.GetAllDecendents(Rock.Rest.Controllers.CategoryItem,Rock.Model.Person,System.Boolean,System.String,System.Boolean,Rock.Data.IService,System.Boolean,System.Boolean,System.String,System.String)">
+        <member name="M:Rock.Rest.Controllers.CategoriesController.GetAllDescendants(Rock.Rest.Controllers.CategoryItem,Rock.Model.Person,System.Boolean,System.String,System.Boolean,Rock.Data.IService,System.Boolean,System.Boolean,System.String,System.String)">
             <summary>
             Gets all both category and non-category item decendents for the provided categoryItem.
             This method updates the provided categoryItem.
@@ -4451,12 +4563,13 @@
             Initializes a new instance of the <see cref="T:Rock.Rest.Controllers.PagesController"/> class.
             </summary>
         </member>
-        <member name="M:Rock.Rest.Controllers.PagesController.GetChildren(System.Int32,System.String)">
+        <member name="M:Rock.Rest.Controllers.PagesController.GetChildren(System.Int32,System.String,System.Nullable{System.Int32})">
             <summary>
             Gets the children.
             </summary>
             <param name="id">The id.</param>
             <param name="hidePageIds">List of pages that should not be included in results</param>
+            <param name="siteType">Type of the site.</param>
             <returns></returns>
         </member>
         <member name="T:Rock.Rest.Controllers.PeopleController">
@@ -4744,13 +4857,6 @@
             </summary>
             <param name="personSearchResult">The person search result.</param>
             <param name="person">The person.</param>
-        </member>
-        <member name="M:Rock.Rest.Controllers.PeopleController.GetImpersonationParameterObsolete(System.Int32)">
-            <summary>
-            Obsolete: Gets the search details
-            </summary>
-            <param name="personId">The person identifier.</param>
-            <returns></returns>
         </member>
         <member name="M:Rock.Rest.Controllers.PeopleController.GetImpersonationParameter(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32})">
             <summary>
@@ -5285,6 +5391,13 @@
             Ensures that rest controllers have been registered to the Rock Database
             </summary>
         </member>
+        <member name="M:Rock.Rest.Controllers.RestControllersController.RestControllerNames(System.Boolean)">
+            <summary>
+            Gets the list of Controller Names, with an option to include obsolete controller.
+            </summary>
+            <param name="includeObsolete">if set to <c>true</c> [include obsolete].</param>
+            <returns></returns>
+        </member>
         <member name="T:Rock.Rest.Controllers.SchedulesController">
             <summary>
             Schedules REST API
@@ -5677,6 +5790,22 @@
             The last value date.
             </value>
         </member>
+        <member name="P:Rock.Rest.Controllers.MetricYTDData.PreviousValue">
+            <summary>
+            Gets or sets the previous value.
+            </summary>
+            <value>
+            The last value.
+            </value>
+        </member>
+        <member name="P:Rock.Rest.Controllers.MetricYTDData.PreviousValueDate">
+            <summary>
+            Gets or sets the last value date.
+            </summary>
+            <value>
+            The last value date.
+            </value>
+        </member>
         <member name="P:Rock.Rest.Controllers.MetricYTDData.CumulativeValue">
             <summary>
             Gets or sets the cumulative value.
@@ -5952,6 +6081,72 @@
             <param name="message">The message.</param>
             <returns></returns>
         </member>
+        <member name="T:Rock.Rest.Filters.RockCacheabilityAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Filters.RockCacheabilityAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            Occurs after the action method is invoked.
+            </summary>
+            <param name="actionExecutedContext">The action executed context.</param>
+        </member>
+        <member name="T:Rock.Rest.Filters.AuthenticateAttribute">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:System.Web.Http.Filters.AuthorizationFilterAttribute" />
+        </member>
+        <member name="M:Rock.Rest.Filters.AuthenticateAttribute.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Calls when a process requests authorization.
+            </summary>
+            <param name="actionContext">The action context, which encapsulates information for using <see cref="T:System.Web.Http.Filters.AuthorizationFilterAttribute" />.</param>
+        </member>
+        <member name="M:Rock.Rest.Filters.AuthenticateAttribute.TryRetrieveHeader(System.Web.Http.Controllers.HttpActionContext,System.String,System.String@)">
+            <summary>
+            Get a header value from the request headers
+            </summary>
+            <param name="actionContext"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rock.Rest.Filters.RequireHttpsAttribute">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:System.Web.Http.Filters.ActionFilterAttribute" />
+        </member>
+        <member name="M:Rock.Rest.Filters.RequireHttpsAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="T:Rock.Rest.Filters.SecuredAttribute">
+            <summary>
+            Checks to see if the Logged-In person has authorization View (HttpMethod: GET) or Edit (all other HttpMethods) for the RestController and Controller's associated EntityType
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Filters.SecuredAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="T:Rock.Rest.Filters.ValidateAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rock.Rest.Filters.ValidateAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
         <member name="T:Rock.Rest.HeaderTokens">
             <summary>
             Tokens that are used in the headers of API requests
@@ -6186,61 +6381,6 @@
             <returns>
             The <see cref="T:System.Web.Cors.CorsPolicy" />.
             </returns>
-        </member>
-        <member name="T:Rock.Rest.Filters.AuthenticateAttribute">
-            <summary>
-            
-            </summary>
-            <seealso cref="T:System.Web.Http.Filters.AuthorizationFilterAttribute" />
-        </member>
-        <member name="M:Rock.Rest.Filters.AuthenticateAttribute.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
-            <summary>
-            Calls when a process requests authorization.
-            </summary>
-            <param name="actionContext">The action context, which encapsulates information for using <see cref="T:System.Web.Http.Filters.AuthorizationFilterAttribute" />.</param>
-        </member>
-        <member name="M:Rock.Rest.Filters.AuthenticateAttribute.TryRetrieveHeader(System.Web.Http.Controllers.HttpActionContext,System.String,System.String@)">
-            <summary>
-            Get a header value from the request headers
-            </summary>
-            <param name="actionContext"></param>
-            <param name="key"></param>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Rock.Rest.Filters.RequireHttpsAttribute">
-            <summary>
-            
-            </summary>
-            <seealso cref="T:System.Web.Http.Filters.ActionFilterAttribute" />
-        </member>
-        <member name="M:Rock.Rest.Filters.RequireHttpsAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
-            <summary>
-            Occurs before the action method is invoked.
-            </summary>
-            <param name="actionContext">The action context.</param>
-        </member>
-        <member name="T:Rock.Rest.Filters.SecuredAttribute">
-            <summary>
-            Checks to see if the Logged-In person has authorization View (HttpMethod: GET) or Edit (all other HttpMethods) for the RestController and Controller's associated EntityType
-            </summary>
-        </member>
-        <member name="M:Rock.Rest.Filters.SecuredAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
-            <summary>
-            Occurs before the action method is invoked.
-            </summary>
-            <param name="actionContext">The action context.</param>
-        </member>
-        <member name="T:Rock.Rest.Filters.ValidateAttribute">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rock.Rest.Filters.ValidateAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
-            <summary>
-            Occurs before the action method is invoked.
-            </summary>
-            <param name="actionContext">The action context.</param>
         </member>
         <member name="T:Rock.Rest.RockApiExceptionHandler">
             <summary>

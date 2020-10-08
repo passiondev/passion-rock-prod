@@ -30,7 +30,7 @@ using Rock.Security;
 using Rock.Web.Cache;
 using Rock.Web.UI;
 using Rock.Web.UI.Controls;
-using com.passioncitychurch.familyregistration;
+using com.passioncitychurch;
 
 namespace RockWeb.Plugins.passion.crm
 {
@@ -38,7 +38,8 @@ namespace RockWeb.Plugins.passion.crm
     [Category("Passion")]
     [Description("Allows families to pre-register for Passion Students for a quick check-in experience.")]
 
-    [CustomDropdownListField("City Header", "What is the name of the City you want displayed in the page header?", "Atlanta,DC", true, null, "", 0, Key = CITY_HEADER_KEY)]
+    [BooleanField("Show Primary Header", "Should the main header be displayed?", true, "", 0)]
+    [CustomDropdownListField("City Header", "What is the name of the City you want displayed in the page header?", "None,Atlanta,DC", true, null, "", 0, Key = CITY_HEADER_KEY)]
     [BooleanField("Show Campus", "Should the campus field be displayed? If there is only one active campus then the campus field will not show.", true, "", 0)]
     [CampusField("Default Campus", "An optional campus to use by default when adding a new family.", false, "", "", 1)]
     [CustomDropdownListField("Planned Visit Date", "How should the Planned Visit Date field be displayed (this value is only used when starting a workflow)?", HIDE_OPTIONAL_REQUIRED, false, "Optional", "", 2)]
@@ -113,6 +114,7 @@ ORDER BY [Text]", false, "", "Child Relationship", 2, "CanCheckinRelationships")
 
     public partial class PassionStudentPreRegistration : RockBlock
     {
+        private const string SHOW_PRIMARY_HEADER_KEY = "ShowPrimaryHeader";
         private const string CITY_HEADER_KEY = "CityHeader";
         private const string ADULT_SUFFIX_KEY = "AdultSuffix";
         private const string ADULT_NAME_KEY = "AdultName";
@@ -813,6 +815,15 @@ ORDER BY [Text]", false, "", "Child Relationship", 2, "CanCheckinRelationships")
             {
                 pnlCityHeaderAtlanta.Visible = false;
                 pnlCityHeaderDc.Visible = false;
+            }
+
+            var showPrimaryHeader = GetAttributeValue(SHOW_PRIMARY_HEADER_KEY);
+            if (showPrimaryHeader == "true")
+            {
+                pnlPrimaryHeader.Visible = true;
+            } else
+            {
+                pnlPrimaryHeader.Visible = false;
             }
 
             pnlVisit.Visible = true;

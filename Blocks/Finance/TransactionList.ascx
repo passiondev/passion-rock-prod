@@ -69,6 +69,7 @@
                                 <Rock:RockBoundField DataField="TransactionCode" HeaderText="Transaction Code" SortExpression="TransactionCode" ColumnPriority="DesktopSmall" />
                                 <Rock:RockBoundField DataField="ForeignKey" HeaderText="Foreign Key" SortExpression="ForeignKey" ColumnPriority="DesktopSmall" />
                                 <Rock:RockLiteralField ID="lBatchId" HeaderText="Batch Id" SortExpression="BatchId" ColumnPriority="DesktopSmall" HeaderStyle-HorizontalAlign="Right" ItemStyle-HorizontalAlign="Right"  ExcelExportBehavior="AlwaysInclude" />
+                                <Rock:RockLiteralField ID="lBatchName" HeaderText="Batch Name" />
                                 <Rock:RockLiteralField ID="lAccounts" HeaderText="Accounts" />
                                 <Rock:RockBoundField DataField="Status" HeaderText="Status" ExcelExportBehavior="AlwaysInclude" Visible="false" />
                                 <Rock:DateTimeField DataField="SettledDate" HeaderText="Settled Date/Time" ExcelExportBehavior="AlwaysInclude" Visible="false" />

@@ -8286,3 +8286,458 @@ Change in App_Offline.htm
 6/2/2020 12:17:28 PM,Application Ended: HostingEnvironment
 6/2/2020 12:17:48 PM,Application Starting...
 6/2/2020 12:17:57 PM,Application Started Successfully
+6/3/2020 5:17:35 PM,Application Ended: HostingEnvironment
+6/3/2020 5:17:58 PM,Application Starting...
+6/3/2020 5:18:07 PM,Application Started Successfully
+6/4/2020 11:25:18 AM,Application Ended: UnloadAppDomainCalled
+6/4/2020 11:25:33 AM,Application Starting...
+6/4/2020 11:25:41 AM,Application Started Successfully
+6/4/2020 10:17:43 PM,Application Ended: HostingEnvironment
+6/4/2020 10:18:03 PM,Application Starting...
+6/4/2020 10:18:12 PM,Application Started Successfully
+6/6/2020 3:17:50 AM,Application Ended: HostingEnvironment
+6/6/2020 3:18:10 AM,Application Starting...
+6/6/2020 3:18:18 AM,Application Started Successfully
+6/7/2020 8:17:58 AM,Application Ended: HostingEnvironment
+6/7/2020 8:18:16 AM,Application Starting...
+6/7/2020 8:18:24 AM,Application Started Successfully
+6/8/2020 1:18:05 PM,Application Ended: HostingEnvironment
+6/8/2020 1:18:23 PM,Application Starting...
+6/8/2020 1:18:31 PM,Application Started Successfully
+6/9/2020 6:18:13 PM,Application Ended: HostingEnvironment
+6/9/2020 6:18:32 PM,Application Starting...
+6/9/2020 6:18:40 PM,Application Started Successfully
+6/10/2020 11:18:20 PM,Application Ended: HostingEnvironment
+6/10/2020 11:18:49 PM,Application Starting...
+6/10/2020 11:19:00 PM,Application Started Successfully
+6/11/2020 4:08:38 AM,Application Ended: HostingEnvironment
+6/11/2020 4:09:31 AM,Application Starting...
+6/11/2020 4:09:41 AM,Application Started Successfully
+6/12/2020 9:09:13 AM,Application Ended: HostingEnvironment
+6/12/2020 9:09:33 AM,Application Starting...
+6/12/2020 9:09:41 AM,Application Started Successfully
+6/13/2020 2:09:21 PM,Application Ended: HostingEnvironment
+6/13/2020 2:09:44 PM,Application Starting...
+6/13/2020 2:09:54 PM,Application Started Successfully
+6/14/2020 7:09:28 PM,Application Ended: HostingEnvironment
+6/14/2020 7:09:48 PM,Application Starting...
+6/14/2020 7:09:56 PM,Application Started Successfully
+6/16/2020 12:09:36 AM,Application Ended: HostingEnvironment
+6/16/2020 12:09:55 AM,Application Starting...
+6/16/2020 12:10:05 AM,Application Started Successfully
+6/17/2020 5:09:43 AM,Application Ended: HostingEnvironment
+6/17/2020 5:10:06 AM,Application Starting...
+6/17/2020 5:10:15 AM,Application Started Successfully
+6/18/2020 10:09:51 AM,Application Ended: HostingEnvironment
+6/18/2020 10:10:16 AM,Application Starting...
+6/18/2020 10:11:19 AM,Application Started Successfully
+6/19/2020 3:09:58 PM,Application Ended: HostingEnvironment
+6/19/2020 3:10:21 PM,Application Starting...
+6/19/2020 3:10:32 PM,Application Started Successfully
+6/20/2020 8:10:05 PM,Application Ended: HostingEnvironment
+6/20/2020 8:10:28 PM,Application Starting...
+6/20/2020 8:10:38 PM,Application Started Successfully
+6/22/2020 1:10:13 AM,Application Ended: HostingEnvironment
+6/22/2020 1:11:24 AM,Application Starting...
+6/22/2020 1:11:33 AM,Application Started Successfully
+6/23/2020 6:10:20 AM,Application Ended: HostingEnvironment
+6/23/2020 6:10:43 AM,Application Starting...
+6/23/2020 6:10:54 AM,Application Started Successfully
+6/24/2020 11:10:28 AM,Application Ended: HostingEnvironment
+6/24/2020 11:10:51 AM,Application Starting...
+6/24/2020 11:11:01 AM,Application Started Successfully
+6/25/2020 4:10:35 PM,Application Ended: HostingEnvironment
+6/25/2020 4:10:58 PM,Application Starting...
+6/25/2020 4:11:09 PM,Application Started Successfully
+6/26/2020 9:10:43 PM,Application Ended: HostingEnvironment
+6/26/2020 9:11:05 PM,Application Starting...
+6/26/2020 9:11:15 PM,Application Started Successfully
+6/28/2020 2:10:50 AM,Application Ended: HostingEnvironment
+6/28/2020 2:11:14 AM,Application Starting...
+6/28/2020 2:11:24 AM,Application Started Successfully
+6/29/2020 7:10:58 AM,Application Ended: HostingEnvironment
+6/29/2020 7:11:21 AM,Application Starting...
+6/29/2020 7:11:31 AM,Application Started Successfully
+6/30/2020 10:25:57 AM,Application Ended: BinDirChangeOrDirectoryRename
+6/30/2020 10:26:24 AM,Application Starting...
+6/30/2020 10:26:34 AM,Application Started Successfully
+6/30/2020 10:27:14 AM,Application Ended: ConfigurationChange
+6/30/2020 10:27:33 AM,Application Starting...
+6/30/2020 10:27:43 AM,Application Started Successfully
+6/30/2020 12:11:05 PM,Application Ended: HostingEnvironment
+6/30/2020 12:11:27 PM,Application Starting...
+6/30/2020 12:11:37 PM,Application Started Successfully
+7/1/2020 5:11:13 PM,Application Ended: HostingEnvironment
+7/1/2020 5:11:37 PM,Application Starting...
+7/1/2020 5:11:47 PM,Application Started Successfully
+7/2/2020 10:11:20 PM,Application Ended: HostingEnvironment
+7/2/2020 10:11:43 PM,Application Starting...
+7/2/2020 10:11:53 PM,Application Started Successfully
+7/3/2020 2:17:58 PM,Application Ended: BinDirChangeOrDirectoryRename
+7/3/2020 2:18:20 PM,Application Starting...
+7/3/2020 2:18:30 PM,Application Started Successfully
+7/3/2020 2:19:01 PM,Application Ended: BinDirChangeOrDirectoryRename
+7/3/2020 2:19:25 PM,Application Starting...
+7/3/2020 2:19:35 PM,Application Started Successfully
+7/4/2020 3:11:28 AM,Application Ended: HostingEnvironment
+7/4/2020 3:11:50 AM,Application Starting...
+7/4/2020 3:11:59 AM,Application Started Successfully
+7/5/2020 8:11:34 AM,Application Ended: HostingEnvironment
+7/5/2020 8:11:57 AM,Application Starting...
+7/5/2020 8:12:07 AM,Application Started Successfully
+7/6/2020 1:11:43 PM,Application Ended: HostingEnvironment
+7/6/2020 1:12:07 PM,Application Starting...
+7/6/2020 1:12:17 PM,Application Started Successfully
+7/7/2020 6:11:50 PM,Application Ended: HostingEnvironment
+7/7/2020 6:12:14 PM,Application Starting...
+7/7/2020 6:12:26 PM,Application Started Successfully
+7/8/2020 11:11:58 PM,Application Ended: HostingEnvironment
+7/8/2020 11:12:21 PM,Application Starting...
+7/8/2020 11:12:32 PM,Application Started Successfully
+7/10/2020 4:12:05 AM,Application Ended: HostingEnvironment
+7/10/2020 4:12:29 AM,Application Starting...
+7/10/2020 4:12:39 AM,Application Started Successfully
+7/11/2020 9:12:13 AM,Application Ended: HostingEnvironment
+7/11/2020 9:12:36 AM,Application Starting...
+7/11/2020 9:12:46 AM,Application Started Successfully
+7/12/2020 2:12:20 PM,Application Ended: HostingEnvironment
+7/12/2020 2:12:44 PM,Application Starting...
+7/12/2020 2:12:54 PM,Application Started Successfully
+7/13/2020 7:12:28 PM,Application Ended: HostingEnvironment
+7/13/2020 7:12:51 PM,Application Starting...
+7/13/2020 7:13:01 PM,Application Started Successfully
+7/15/2020 12:12:35 AM,Application Ended: HostingEnvironment
+7/15/2020 12:12:59 AM,Application Starting...
+7/15/2020 12:13:10 AM,Application Started Successfully
+7/16/2020 4:22:39 AM,Application Ended: HostingEnvironment
+7/16/2020 4:23:36 AM,Application Starting...
+7/16/2020 4:23:46 AM,Application Started Successfully
+7/17/2020 9:23:14 AM,Application Ended: HostingEnvironment
+7/17/2020 9:23:37 AM,Application Starting...
+7/17/2020 9:23:47 AM,Application Started Successfully
+7/18/2020 2:23:21 PM,Application Ended: HostingEnvironment
+7/18/2020 2:23:44 PM,Application Starting...
+7/18/2020 2:23:55 PM,Application Started Successfully
+7/19/2020 7:23:29 PM,Application Ended: HostingEnvironment
+7/19/2020 7:23:52 PM,Application Starting...
+7/19/2020 7:24:02 PM,Application Started Successfully
+7/21/2020 12:23:37 AM,Application Ended: HostingEnvironment
+7/21/2020 12:23:59 AM,Application Starting...
+7/21/2020 12:24:09 AM,Application Started Successfully
+7/22/2020 5:23:44 AM,Application Ended: HostingEnvironment
+7/22/2020 5:24:08 AM,Application Starting...
+7/22/2020 5:24:19 AM,Application Started Successfully
+7/23/2020 10:23:52 AM,Application Ended: HostingEnvironment
+7/23/2020 10:24:14 AM,Application Starting...
+7/23/2020 10:24:26 AM,Application Started Successfully
+7/24/2020 3:23:59 PM,Application Ended: HostingEnvironment
+7/24/2020 3:24:23 PM,Application Starting...
+7/24/2020 3:24:33 PM,Application Started Successfully
+7/25/2020 8:24:07 PM,Application Ended: HostingEnvironment
+7/25/2020 8:24:31 PM,Application Starting...
+7/25/2020 8:24:41 PM,Application Started Successfully
+7/26/2020 2:08:27 PM,Application Ended: BinDirChangeOrDirectoryRename
+7/26/2020 2:08:54 PM,Application Starting...
+7/26/2020 2:09:06 PM,Application Started Successfully
+7/27/2020 1:24:14 AM,Application Ended: HostingEnvironment
+7/27/2020 1:24:38 AM,Application Starting...
+7/27/2020 1:24:48 AM,Application Started Successfully
+7/27/2020 11:14:08 AM,Application Ended: UnloadAppDomainCalled
+7/27/2020 11:14:25 AM,Application Starting...
+7/27/2020 11:14:35 AM,Application Started Successfully
+7/28/2020 6:24:22 AM,Application Ended: HostingEnvironment
+7/28/2020 6:24:46 AM,Application Starting...
+7/28/2020 6:24:56 AM,Application Started Successfully
+7/29/2020 11:24:29 AM,Application Ended: HostingEnvironment
+7/29/2020 11:24:53 AM,Application Starting...
+7/29/2020 11:25:04 AM,Application Started Successfully
+7/30/2020 4:24:37 PM,Application Ended: HostingEnvironment
+7/30/2020 4:25:00 PM,Application Starting...
+7/30/2020 4:25:10 PM,Application Started Successfully
+7/31/2020 4:00:15 PM,Application Ended: BinDirChangeOrDirectoryRename
+7/31/2020 4:00:47 PM,Application Starting...
+7/31/2020 4:00:58 PM,Application Started Successfully
+7/31/2020 4:22:52 PM,Application Ended: HostingEnvironment
+7/31/2020 4:23:43 PM,Application Starting...
+7/31/2020 4:23:54 PM,Application Started Successfully
+8/1/2020 9:23:25 PM,Application Ended: HostingEnvironment
+8/1/2020 9:23:48 PM,Application Starting...
+8/1/2020 9:23:58 PM,Application Started Successfully
+8/3/2020 2:23:32 AM,Application Ended: HostingEnvironment
+8/3/2020 2:23:56 AM,Application Starting...
+8/3/2020 2:24:06 AM,Application Started Successfully
+8/4/2020 7:23:40 AM,Application Ended: HostingEnvironment
+8/4/2020 7:24:03 AM,Application Starting...
+8/4/2020 7:24:12 AM,Application Started Successfully
+8/5/2020 12:23:47 PM,Application Ended: HostingEnvironment
+8/5/2020 12:24:11 PM,Application Starting...
+8/5/2020 12:24:21 PM,Application Started Successfully
+8/5/2020 4:20:38 PM,Application Ended: MaxRecompilationsReached
+8/5/2020 4:20:57 PM,Application Starting...
+8/5/2020 4:21:07 PM,Application Started Successfully
+8/6/2020 11:07:17 AM,Application Ended: MaxRecompilationsReached
+8/6/2020 11:07:34 AM,Application Starting...
+8/6/2020 11:07:43 AM,Application Started Successfully
+8/6/2020 5:23:55 PM,Application Ended: HostingEnvironment
+8/6/2020 5:24:18 PM,Application Starting...
+8/6/2020 5:24:28 PM,Application Started Successfully
+8/7/2020 3:44:11 PM,Application Ended: UnloadAppDomainCalled
+8/7/2020 3:44:28 PM,Application Starting...
+8/7/2020 3:44:37 PM,Application Started Successfully
+8/7/2020 10:24:02 PM,Application Ended: HostingEnvironment
+8/7/2020 10:24:26 PM,Application Starting...
+8/7/2020 10:24:37 PM,Application Started Successfully
+8/9/2020 3:24:10 AM,Application Ended: HostingEnvironment
+8/9/2020 3:24:33 AM,Application Starting...
+8/9/2020 3:24:43 AM,Application Started Successfully
+8/10/2020 8:24:17 AM,Application Ended: HostingEnvironment
+8/10/2020 8:24:40 AM,Application Starting...
+8/10/2020 8:24:50 AM,Application Started Successfully
+8/11/2020 1:24:25 PM,Application Ended: HostingEnvironment
+8/11/2020 1:24:48 PM,Application Starting...
+8/11/2020 1:24:58 PM,Application Started Successfully
+8/12/2020 4:16:52 AM,Application Ended: HostingEnvironment
+8/12/2020 4:18:03 AM,Application Starting...
+8/12/2020 4:18:13 AM,Application Started Successfully
+8/13/2020 9:17:28 AM,Application Ended: HostingEnvironment
+8/13/2020 9:17:50 AM,Application Starting...
+8/13/2020 9:18:00 AM,Application Started Successfully
+8/14/2020 2:17:35 PM,Application Ended: HostingEnvironment
+8/14/2020 2:17:59 PM,Application Starting...
+8/14/2020 2:18:09 PM,Application Started Successfully
+8/15/2020 7:17:43 PM,Application Ended: HostingEnvironment
+8/15/2020 7:18:06 PM,Application Starting...
+8/15/2020 7:18:16 PM,Application Started Successfully
+8/17/2020 12:17:50 AM,Application Ended: HostingEnvironment
+8/17/2020 12:18:13 AM,Application Starting...
+8/17/2020 12:18:23 AM,Application Started Successfully
+8/18/2020 5:17:58 AM,Application Ended: HostingEnvironment
+8/18/2020 5:18:21 AM,Application Starting...
+8/18/2020 5:18:32 AM,Application Started Successfully
+8/19/2020 10:18:05 AM,Application Ended: HostingEnvironment
+8/19/2020 10:18:29 AM,Application Starting...
+8/19/2020 10:18:39 AM,Application Started Successfully
+8/20/2020 3:18:13 PM,Application Ended: HostingEnvironment
+8/20/2020 3:18:36 PM,Application Starting...
+8/20/2020 3:18:46 PM,Application Started Successfully
+8/21/2020 8:18:20 PM,Application Ended: HostingEnvironment
+8/21/2020 8:18:44 PM,Application Starting...
+8/21/2020 8:18:54 PM,Application Started Successfully
+8/23/2020 1:18:28 AM,Application Ended: HostingEnvironment
+8/23/2020 1:18:51 AM,Application Starting...
+8/23/2020 1:19:01 AM,Application Started Successfully
+8/24/2020 6:18:52 AM,Application Ended: HostingEnvironment
+8/24/2020 6:19:15 AM,Application Starting...
+8/24/2020 6:19:26 AM,Application Started Successfully
+8/25/2020 11:19:00 AM,Application Ended: HostingEnvironment
+8/25/2020 11:19:24 AM,Application Starting...
+8/25/2020 11:19:34 AM,Application Started Successfully
+8/26/2020 4:19:07 PM,Application Ended: HostingEnvironment
+8/26/2020 4:19:31 PM,Application Starting...
+8/26/2020 4:19:40 PM,Application Started Successfully
+8/27/2020 9:19:15 PM,Application Ended: HostingEnvironment
+8/27/2020 9:19:38 PM,Application Starting...
+8/27/2020 9:19:49 PM,Application Started Successfully
+8/28/2020 2:20:22 PM,Application Ended: BinDirChangeOrDirectoryRename
+8/28/2020 2:20:52 PM,Application Starting...
+8/28/2020 2:21:02 PM,Application Started Successfully
+8/29/2020 2:19:22 AM,Application Ended: HostingEnvironment
+8/29/2020 2:19:46 AM,Application Starting...
+8/29/2020 2:19:56 AM,Application Started Successfully
+8/30/2020 7:19:30 AM,Application Ended: HostingEnvironment
+8/30/2020 7:19:53 AM,Application Starting...
+8/30/2020 7:20:03 AM,Application Started Successfully
+8/31/2020 12:19:38 PM,Application Ended: HostingEnvironment
+8/31/2020 12:20:00 PM,Application Starting...
+8/31/2020 12:20:10 PM,Application Started Successfully
+9/1/2020 4:00:31 PM,Application Ended: BinDirChangeOrDirectoryRename
+9/1/2020 4:00:57 PM,Application Starting...
+9/1/2020 4:01:07 PM,Application Started Successfully
+9/1/2020 4:06:10 PM,Application Ended: ConfigurationChange
+9/1/2020 4:06:11 PM,Application Starting...
+9/1/2020 4:06:20 PM,Application Started Successfully
+9/1/2020 5:19:45 PM,Application Ended: HostingEnvironment
+9/1/2020 5:20:08 PM,Application Starting...
+9/1/2020 5:20:18 PM,Application Started Successfully
+9/2/2020 10:19:53 PM,Application Ended: HostingEnvironment
+9/2/2020 10:20:15 PM,Application Starting...
+9/2/2020 10:20:26 PM,Application Started Successfully
+9/4/2020 3:20:00 AM,Application Ended: HostingEnvironment
+9/4/2020 3:20:25 AM,Application Starting...
+9/4/2020 3:20:35 AM,Application Started Successfully
+9/5/2020 8:20:08 AM,Application Ended: HostingEnvironment
+9/5/2020 8:20:31 AM,Application Starting...
+9/5/2020 8:20:41 AM,Application Started Successfully
+9/6/2020 1:20:16 PM,Application Ended: HostingEnvironment
+9/6/2020 1:20:38 PM,Application Starting...
+9/6/2020 1:20:48 PM,Application Started Successfully
+9/7/2020 6:20:23 PM,Application Ended: HostingEnvironment
+9/7/2020 6:20:46 PM,Application Starting...
+9/7/2020 6:20:57 PM,Application Started Successfully
+9/8/2020 11:20:31 PM,Application Ended: HostingEnvironment
+9/8/2020 11:20:54 PM,Application Starting...
+9/8/2020 11:21:04 PM,Application Started Successfully
+9/9/2020 4:11:12 AM,Application Ended: HostingEnvironment
+9/9/2020 4:12:05 AM,Application Starting...
+9/9/2020 4:12:16 AM,Application Started Successfully
+9/10/2020 9:11:41 AM,Application Ended: HostingEnvironment
+9/10/2020 9:12:03 AM,Application Starting...
+9/10/2020 9:12:13 AM,Application Started Successfully
+9/11/2020 2:11:49 PM,Application Ended: HostingEnvironment
+9/11/2020 2:12:11 PM,Application Starting...
+9/11/2020 2:12:21 PM,Application Started Successfully
+9/12/2020 7:11:56 PM,Application Ended: HostingEnvironment
+9/12/2020 7:12:17 PM,Application Starting...
+9/12/2020 7:12:26 PM,Application Started Successfully
+9/14/2020 12:12:04 AM,Application Ended: HostingEnvironment
+9/14/2020 12:12:28 AM,Application Starting...
+9/14/2020 12:12:38 AM,Application Started Successfully
+9/15/2020 5:12:11 AM,Application Ended: HostingEnvironment
+9/15/2020 5:12:54 AM,Application Starting...
+9/15/2020 5:13:04 AM,Application Started Successfully
+9/16/2020 10:12:19 AM,Application Ended: HostingEnvironment
+9/16/2020 10:12:43 AM,Application Starting...
+9/16/2020 10:12:54 AM,Application Started Successfully
+9/16/2020 5:06:29 PM,Application Ended: HostingEnvironment
+9/16/2020 5:07:20 PM,Application Starting...
+9/16/2020 5:07:31 PM,Application Started Successfully
+9/17/2020 10:07:04 PM,Application Ended: HostingEnvironment
+9/17/2020 10:07:26 PM,Application Starting...
+9/17/2020 10:07:36 PM,Application Started Successfully
+9/19/2020 3:07:12 AM,Application Ended: HostingEnvironment
+9/19/2020 3:07:45 AM,Application Starting...
+9/19/2020 3:07:55 AM,Application Started Successfully
+9/20/2020 8:07:18 AM,Application Ended: HostingEnvironment
+9/20/2020 8:07:39 AM,Application Starting...
+9/20/2020 8:07:48 AM,Application Started Successfully
+9/21/2020 1:07:27 PM,Application Ended: HostingEnvironment
+9/21/2020 1:07:50 PM,Application Starting...
+9/21/2020 1:08:00 PM,Application Started Successfully
+9/21/2020 3:06:32 PM,Application Ended: UnloadAppDomainCalled
+9/21/2020 3:06:50 PM,Application Starting...
+9/21/2020 3:06:59 PM,Application Started Successfully
+9/22/2020 6:07:34 PM,Application Ended: HostingEnvironment
+9/22/2020 6:07:55 PM,Application Starting...
+9/22/2020 6:08:05 PM,Application Started Successfully
+9/23/2020 1:07:29 PM,Application Ended: BinDirChangeOrDirectoryRename
+9/23/2020 1:07:57 PM,Application Starting...
+9/23/2020 1:08:06 PM,Application Started Successfully
+9/23/2020 11:07:41 PM,Application Ended: HostingEnvironment
+9/23/2020 11:08:04 PM,Application Starting...
+9/23/2020 11:08:13 PM,Application Started Successfully
+9/25/2020 4:07:49 AM,Application Ended: HostingEnvironment
+9/25/2020 4:08:10 AM,Application Starting...
+9/25/2020 4:08:20 AM,Application Started Successfully
+9/26/2020 9:07:56 AM,Application Ended: HostingEnvironment
+9/26/2020 9:08:19 AM,Application Starting...
+9/26/2020 9:08:29 AM,Application Started Successfully
+9/27/2020 2:08:04 PM,Application Ended: HostingEnvironment
+9/27/2020 2:08:26 PM,Application Starting...
+9/27/2020 2:08:35 PM,Application Started Successfully
+9/28/2020 7:08:11 PM,Application Ended: HostingEnvironment
+9/28/2020 7:08:33 PM,Application Starting...
+9/28/2020 7:08:43 PM,Application Started Successfully
+9/29/2020 11:59:31 AM,Application Ended: UnloadAppDomainCalled
+9/29/2020 11:59:48 AM,Application Starting...
+9/29/2020 11:59:57 AM,Application Started Successfully
+9/30/2020 12:08:19 AM,Application Ended: HostingEnvironment
+9/30/2020 12:08:39 AM,Application Starting...
+9/30/2020 12:08:49 AM,Application Started Successfully
+10/1/2020 5:08:27 AM,Application Ended: HostingEnvironment
+10/1/2020 5:08:48 AM,Application Starting...
+10/1/2020 5:08:58 AM,Application Started Successfully
+10/2/2020 10:08:34 AM,Application Ended: HostingEnvironment
+10/2/2020 10:08:58 AM,Application Starting...
+10/2/2020 10:09:08 AM,Application Started Successfully
+10/3/2020 6:36:04 AM,Application Starting...
+10/3/2020 6:36:17 AM,Application Started Successfully
+10/3/2020 6:36:18 AM,Application Ended: ConfigurationChange
+10/3/2020 6:36:48 AM,Application Starting...
+10/3/2020 6:37:04 AM,Application Started Successfully
+10/3/2020 6:37:10 AM,Application Ended: CodeDirChangeOrDirectoryRename
+10/3/2020 6:38:49 AM,Application Ended: ConfigurationChange
+10/3/2020 6:38:54 AM,AssemblyInitializer started by RockWeb
+10/3/2020 6:38:54 AM,Application Starting
+10/3/2020 6:39:06 AM,Migrating Database...
+10/3/2020 6:41:10 AM,Application Started Successfully
+10/3/2020 6:42:00 AM,AssemblyInitializer started by RockWeb
+10/3/2020 6:42:00 AM,Application Starting
+10/3/2020 6:42:30 AM,AssemblyInitializer started by RockWeb
+10/3/2020 6:42:30 AM,Application Starting
+10/3/2020 6:42:53 AM,Application Ended: ConfigurationChange
+10/3/2020 6:42:57 AM,AssemblyInitializer started by RockWeb
+10/3/2020 6:42:57 AM,Application Starting
+10/3/2020 6:43:30 AM,Application Started Successfully
+10/3/2020 6:51:22 AM,Application Ended: UnloadAppDomainCalled
+10/3/2020 6:51:30 AM,AssemblyInitializer started by RockWeb
+10/3/2020 6:51:30 AM,Application Starting
+10/3/2020 6:51:53 AM,Application Started Successfully
+10/3/2020 3:08:42 PM,Application Ended: HostingEnvironment
+10/3/2020 3:08:44 PM,AssemblyInitializer started by RockWeb
+10/3/2020 3:08:44 PM,Application Starting
+10/3/2020 3:09:10 PM,Application Started Successfully
+10/4/2020 8:08:49 PM,Application Ended: HostingEnvironment
+10/4/2020 8:08:52 PM,AssemblyInitializer started by RockWeb
+10/4/2020 8:08:52 PM,Application Starting
+10/4/2020 8:09:17 PM,Application Started Successfully
+10/5/2020 3:29:23 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 1:08:57 AM,Application Ended: HostingEnvironment
+10/6/2020 1:08:59 AM,AssemblyInitializer started by RockWeb
+10/6/2020 1:08:59 AM,Application Starting
+10/6/2020 1:09:25 AM,Application Started Successfully
+10/6/2020 8:58:44 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/6/2020 8:58:45 PM,AssemblyInitializer started by RockWeb
+10/6/2020 8:58:45 PM,Application Starting
+10/6/2020 8:58:57 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 8:59:21 PM,Application Started Successfully
+10/6/2020 9:00:31 PM,AssemblyInitializer started by RockWeb
+10/6/2020 9:00:31 PM,Application Starting
+10/6/2020 9:00:51 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 9:01:11 PM,Application Started Successfully
+10/6/2020 9:01:19 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/6/2020 9:03:12 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/6/2020 9:03:12 PM,AssemblyInitializer started by RockWeb
+10/6/2020 9:03:12 PM,Application Starting
+10/6/2020 9:03:23 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 9:03:45 PM,Application Started Successfully
+10/6/2020 9:05:21 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 9:05:24 PM,AssemblyInitializer started by RockWeb
+10/6/2020 9:05:24 PM,Application Starting
+10/6/2020 9:05:26 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/6/2020 9:05:38 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 9:06:00 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 9:06:07 PM,Application Started Successfully
+10/6/2020 9:06:08 PM,AssemblyInitializer started by RockWeb
+10/6/2020 9:06:08 PM,Application Starting
+10/6/2020 9:06:39 PM,Application Started Successfully
+10/6/2020 9:07:06 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/6/2020 9:13:56 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/6/2020 9:13:57 PM,AssemblyInitializer started by RockWeb
+10/6/2020 9:13:57 PM,Application Starting
+10/6/2020 9:14:07 PM,AssemblyInitializer started by Visual Studio
+10/6/2020 9:14:26 PM,Application Started Successfully
+10/7/2020 6:09:04 AM,Application Ended: HostingEnvironment
+10/7/2020 6:09:07 AM,AssemblyInitializer started by RockWeb
+10/7/2020 6:09:07 AM,Application Starting
+10/7/2020 6:09:32 AM,Application Started Successfully
+10/7/2020 8:49:59 AM,Application Ended: BinDirChangeOrDirectoryRename
+10/7/2020 8:49:59 AM,AssemblyInitializer started by RockWeb
+10/7/2020 8:49:59 AM,Application Starting
+10/7/2020 8:50:32 AM,Application Started Successfully
+10/7/2020 8:52:54 AM,Application Ended: BinDirChangeOrDirectoryRename
+10/7/2020 8:52:55 AM,AssemblyInitializer started by RockWeb
+10/7/2020 8:52:55 AM,Application Starting
+10/7/2020 8:53:28 AM,Application Started Successfully
+10/7/2020 8:56:13 AM,AssemblyInitializer started by RockWeb
+10/7/2020 8:56:13 AM,Application Starting
+10/7/2020 8:56:13 AM,Application Ended: BinDirChangeOrDirectoryRename
+10/7/2020 8:56:43 AM,Application Started Successfully
+10/7/2020 2:33:36 PM,Application Ended: BinDirChangeOrDirectoryRename
+10/7/2020 2:33:38 PM,AssemblyInitializer started by RockWeb
+10/7/2020 2:33:38 PM,Application Starting
+10/7/2020 2:34:07 PM,Application Started Successfully
+10/7/2020 4:52:43 PM,AssemblyInitializer started by Visual Studio
+10/8/2020 11:09:12 AM,Application Ended: HostingEnvironment
+10/8/2020 11:09:14 AM,AssemblyInitializer started by RockWeb
+10/8/2020 11:09:15 AM,Application Starting
+10/8/2020 11:09:43 AM,Application Started Successfully

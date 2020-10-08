@@ -11,7 +11,9 @@
 
             <div class="panel-body">
                 <div class="panel-heading">
-                    <h1 class="text-center text-primary">Students Registration</h1>
+                    <asp:Panel ID ="pnlPrimaryHeader" runat="server">
+                        <h1 class="text-center text-primary">Students Registration</h1>
+                    </asp:panel>
                     <asp:panel ID ="pnlCityHeaderAtlanta" runat="server">
                         <h2 class="text-center">Atlanta</h2>
                     </asp:panel>
